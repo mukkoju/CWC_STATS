@@ -255,9 +255,8 @@
       m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
   </script>
-  </body>
-  <html>
-    <head>
+  </body><html>
+<head>
   <title>CWC_STATS</title>
   <link rel="canonical" href='https://www.saddahaq.com/cwc15' />
   <!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
@@ -283,7 +282,7 @@
     }
     
     #cwc-stats-mn-blc .listNavContent {
-        width: 30%;
+        width: 100%;
         float: left;
         margin-left: 16px;
         border-radius: 10px;
@@ -392,7 +391,7 @@
     #cwc-stats-mn-blc .listNavAll
     {
         float: left;
-        width: 100%;
+        width: 30%;
     }
     #cwc-stats-mn-blc .listNavReslt{
         float: left;
@@ -717,6 +716,20 @@
       </div>
       <div class="listNavReslt" id="statslist">
             <div class="lstNavhdr"></div>
+            <div class="lstNavhdr"><h3>most sixes</h3></div><div class="clearfix"></div>
+            <section class="statsec">
+              <?php for ($i=0; $i<8; $i++){ ?>
+                <div class="statsblock"><div class="rank"><?= ($i + 1) ?></div>
+                        <div class="plyr">
+                            <div class="player_phto_cntr"><img src="http://icc-corp-2013-live.s3.amazonaws.com/players/cwc-2015/210/27.png" data-player-id="490" class="playerPhoto"></div>        
+                            <div class="player-per-details"><div class="name"><div class="fname">KUMAR</div><div class="sname">SANGAKKARA</div></div>
+                                <div class="cntry"><div class=""></div>India</div></div><div class="statdata hover"><div class="count"><?= rand(100, 240) ?></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+              <?php } ?>
+          </section>
       </div>
       
       <div class="clearfix"></div>
